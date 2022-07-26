@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Катя Артюх](https://up.htmlacademy.ru/adaptive/26/user/488659).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
