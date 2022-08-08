@@ -6,8 +6,8 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="#" width="185" height="96" alt="Логотип города Седона">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__image" src="#" width="185" height="96" alt="Логотип города Седона">
       </a>
       <nav class="page-header__main-nav main-nav main-nav--closed container">
         <button class="main-nav__toggle" type="button" name="main-nav-button" aria-label="Открыть меню"></button>
@@ -31,7 +31,7 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="main">
       <section class="feedback">
         <div class="feedback__wrapper container">
           <h1 class="feedback__page-title title">Оставьте свой отзыв</h1>
@@ -124,33 +124,33 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper container">
-        <b class="page-footer__hashtag">#visitsedona</b>
-        <ul class="page-footer__list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk" href="#" aria-label="Vkontacte">
-              <svg class="social-list__link-icon social-list__link-icon--vk" width="24" height="14">
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <b class="footer__hashtag">#visitsedona</b>
+        <ul class="footer__list social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#" aria-label="Vkontacte">
+              <svg class="social__link-icon social__link-icon--vk" width="24" height="14">
                 <!-- use -->
               </svg>
             </a>
           </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--tg" href="#" aria-label="Telegram">
-              <svg class="social-list__link-icon social-list__link-icon--tg" width="21" height="17.6">
+          <li class="social__item">
+            <a class="social__link social__link--tg" href="#" aria-label="Telegram">
+              <svg class="social__link-icon social__link-icon--tg" width="21" height="17.6">
                 <!-- use -->
               </svg>
             </a>
           </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--ytb" href="#" aria-label="Youtube">
-              <svg class="social-list__link-icon social-list__link-icon--ytb" width="20" height="14">
+          <li class="social__item">
+            <a class="social__link social__link--ytb" href="#" aria-label="Youtube">
+              <svg class="social__link-icon social__link-icon--ytb" width="20" height="14">
                 <!-- use -->
               </svg>
             </a>
           </li>
         </ul>
-        <div class="page-footer__copyright copyright">
+        <div class="footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             Разработано
             <svg class="copyright__link-icon" width="27" height="34">
@@ -161,13 +161,13 @@
       </div>
     </footer>
 
-    <section class="modal modal__warning">
+    <section class="modal modal--warning">
       <h2 class="modal__title">Что-то пошло не так!</h2>
       <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="modal__close-button button" type="button" aria-label="Закрыть окно">ОК</button>
     </section>
 
-    <section class="modal modal__information">
+    <section class="modal modal--information">
       <h2 class="modal__title">Ваш отзыв отправлен!</h2>
       <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
       <button class="modal__close-button button" type="button">Закрыть окно</button>
