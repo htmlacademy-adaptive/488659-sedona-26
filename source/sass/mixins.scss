@@ -1,6 +1,4 @@
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+@mixin visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -14,4 +12,26 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@mixin list-decoration {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+@mixin link-decoration {
+  text-decoration: none;
+}
+
+@mixin image-size {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin container {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 18px;
 }
