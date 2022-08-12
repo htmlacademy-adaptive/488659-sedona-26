@@ -1,0 +1,25 @@
+@use "mixins.scss";
+
+.benefits {
+  @include list-decoration;
+
+  padding: 23px 18px 30px;
+
+  text-align: left;
+  color: $dark-grey-color;
+  background-color: $white-color;
+}
+
+.benefits__item {
+  padding-left: 50px;
+  padding-bottom: 22px;
+}
+
+.benefits__title,
+.benefits__description {
+  margin: 0;
+}
+
+.benefits__title {
+  padding-bottom: 16px;
+}

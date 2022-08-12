@@ -1,0 +1,54 @@
+@use "mixins.scss";
+
+.features__wrapper {
+  @include container;
+}
+
+.features__intro {
+  margin: 0;
+  padding: 0 20px 16px;
+}
+
+.features__list {
+  @include list-decoration;
+}
+
+.features__item {
+  &--blue-theme {
+    color: $white-color;
+    background-color: $blue-default-color;
+  }
+
+  &--gray-theme {
+    background-color: $light-grey-color;
+  }
+
+  &--pattern {
+    padding-top: 46px;
+
+    background-image: url("../img/left-pattern-features.svg"), url("../img/right-pattern-features.svg");
+    background-size: auto, auto;
+    background-position: top left, top right;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+
+.features__subtitle {
+  margin: 0;
+  padding: 24px 20px 11px;
+}
+
+.features__number,
+.features__description {
+  size: 21px;
+  line-height: 15px;
+}
+
+.features__description {
+  margin: 0;
+  padding: 17px 31px 24px;
+}
+
+.features__image {
+  @include image-size;
+}
