@@ -1,0 +1,16 @@
+@use "mixins.scss";
+
+.promo {
+  background-color: $blue-click-color;
+
+  background-image: url("../img/left-pattern-promo.svg"), url("../img/right-pattern-promo.svg"), url("../img/bg-mobile.jpg");
+  background-size: auto, auto, contain;
+  background-position: bottom left, bottom right, top center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.promo__slogan-image {
+  @include image-size;
+  padding-top: 90px;
+  padding-bottom: 85px;
+}

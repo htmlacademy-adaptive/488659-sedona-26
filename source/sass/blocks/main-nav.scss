@@ -7,8 +7,6 @@
 
 .main-nav__item {
   box-shadow: 0 1px 0 $shadow-20-color, inset 0 1px 0 $white-20-color;
-  margin-left: -18px;
-  margin-right: -18px;
 
   &--drop-shadow {
     box-shadow: 0 1px 0 $shadow-20-color;
@@ -19,7 +17,7 @@
   }
 
   &--gradient {
-    background-image: linear-gradient(to top, $black-20-color, $black-0-color 7%, transparent 7%, transparent 100%);
+    background-image: linear-gradient(to top, $black-20-color, $black-0-color 13%, transparent 13%, transparent 100%);
   }
 }
 
@@ -31,7 +29,6 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  text-transform: uppercase;
 
   color: $white-color;
 

@@ -1,0 +1,6 @@
+@use "mixins.scss";
+
+.page-header__main-nav,
+.page-header__promo {
+  @include container;
+}
