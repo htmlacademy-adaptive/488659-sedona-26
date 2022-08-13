@@ -1,0 +1,54 @@
+@use "mixins.scss";
+
+.service__wrapper {
+  @include container;
+  padding-bottom: 49px;
+}
+
+.service__intro {
+  margin: 0;
+  padding: 35px 30px 24px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  color: $black-color;
+}
+
+.service__description {
+  margin: 0;
+  padding: 0 28px 35px;
+}
+
+.service__find-hotel-link {
+  @include link-decoration;
+
+  display: block;
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: $white-color;
+  background-color: $blue-default-color;
+
+  margin: 0 18px;
+  padding: 16px 0 16px;
+
+  &[href]:hover {
+    background-color: $blue-hover-color;
+  }
+
+  &[href]:active {
+    color: $white-30-color;
+    background-color: $blue-click-color;
+  }
+
+  &[href]:disabled {
+    color: $white-color;
+    background-color: $grey-form-hover-color;
+    cursor: default;
+  }
+}
