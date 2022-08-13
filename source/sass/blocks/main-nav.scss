@@ -33,4 +33,13 @@
   color: $white-color;
 
   padding: 17px 0 12px;
+
+  &:hover {
+    background-color: $blue-hover-color;
+  }
+
+  &:active {
+    color: $white-60-color;
+    background-color: $blue-click-color;
+  }
 }

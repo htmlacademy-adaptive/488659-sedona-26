@@ -1,0 +1,22 @@
+@use "mixins.scss";
+
+.social__item {
+  color: $white-color;
+  background-color: $blue-default-color;
+}
+
+.social__link {
+  @include link-decoration;
+
+  display: block;
+  cursor: pointer;
+
+  &[href]:hover {
+    background-color: $blue-hover-color;
+  }
+
+  &[href]:active {
+    color: $white-30-color;
+    background-color: $blue-click-color;
+  }
+}
