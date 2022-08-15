@@ -3,14 +3,23 @@
 .promo {
   background-color: $blue-click-color;
 
-  background-image: url("../img/left-pattern-promo.svg"), url("../img/right-pattern-promo.svg"), url("../img/bg-mobile.jpg");
+  background-image: url("../img/left-pattern-promo.svg"), url("../img/right-pattern-promo.svg"), url("../img/bg-mobile-index.jpg");
   background-size: auto, auto, cover;
   background-position: bottom left, bottom right, top center;
   background-repeat: no-repeat, no-repeat, no-repeat;
+
+  &--inner {
+    background-image: url("../img/left-pattern-promo.svg"), url("../img/right-pattern-promo.svg"), url("../img/bg-mobile.jpg");
+  }
 }
 
 .promo__slogan-image {
   @include image-size;
   padding-top: 90px;
   padding-bottom: 85px;
+
+  &--inner {
+    padding-top: 52px;
+    padding-bottom: 67px;
+  }
 }

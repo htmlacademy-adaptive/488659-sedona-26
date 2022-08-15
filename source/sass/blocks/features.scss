@@ -17,10 +17,6 @@
   &--blue-theme {
     color: $white-color;
     background-color: $blue-default-color;
-
-    & .features__subtitle {
-      color: inherit;
-    }
   }
 
   &--gray-theme {
@@ -40,6 +36,10 @@
 .features__subtitle {
   margin: 0;
   padding: 24px 20px 11px;
+
+  &--blue-theme {
+    color: inherit;
+  }
 }
 
 .features__number,
