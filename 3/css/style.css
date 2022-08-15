@@ -1,0 +1,318 @@
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans Bold"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+.benefits {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  padding: 23px 18px 30px;
+  text-align: left;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.benefits__item {
+  padding-left: 50px;
+  padding-bottom: 22px;
+}
+
+.benefits__title,
+.benefits__description {
+  margin: 0;
+}
+
+.benefits__title {
+  padding-bottom: 16px;
+}
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  border: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.button:hover {
+  background-color: #669ec0;
+}
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+.button:disabled {
+  color: #ffffff;
+  background-color: #e5e5e5;
+  cursor: default;
+}
+
+.copyright__link {
+  text-decoration: none;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000000;
+  margin: 0;
+  padding: 0 55px 20px;
+}
+.copyright__link[href]:hover {
+  color: #81b3d2;
+}
+.copyright__link[href]:active {
+  color: #b3b3b3;
+}
+
+.features__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.features__intro {
+  margin: 0;
+  padding: 0 20px 16px;
+}
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.features__item--blue-theme {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.features__item--gray-theme {
+  background-color: #eeeeee;
+}
+.features__item--pattern {
+  padding-top: 46px;
+  background-image: url("../img/left-pattern-features.svg"), url("../img/right-pattern-features.svg");
+  background-size: auto, auto;
+  background-position: top left, top right;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.features__subtitle {
+  margin: 0;
+  padding: 24px 20px 11px;
+}
+
+.features__number,
+.features__description {
+  size: 21px;
+  line-height: 15px;
+}
+
+.features__description {
+  margin: 0;
+  padding: 17px 31px 24px;
+}
+
+.features__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.footer__hashtag {
+  display: block;
+  padding: 28px 50px 33px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700px;
+  color: #000000;
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 40px;
+}
+
+.main__page-title {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 32px 30px 35px;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  background-color: #81b3d2;
+}
+
+.main-nav__item {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.main-nav__item--drop-shadow {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+}
+.main-nav__item--inner-shadow {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.main-nav__item--gradient {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 13%, transparent 13%, transparent 100%);
+}
+
+.main-nav__link {
+  display: block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 17px 0 12px;
+}
+.main-nav__link:hover {
+  background-color: #669ec0;
+}
+.main-nav__link:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #5496bd;
+}
+
+.map__image {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.page__body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.page-header__main-nav,
+.page-header__promo {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.promo {
+  background-color: #5496bd;
+  background-image: url("../img/left-pattern-promo.svg"), url("../img/right-pattern-promo.svg"), url("../img/bg-mobile.jpg");
+  background-size: auto, auto, contain;
+  background-position: bottom left, bottom right, top center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.promo__slogan-image {
+  max-width: 100%;
+  height: auto;
+  padding-top: 90px;
+  padding-bottom: 85px;
+}
+
+.service__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 49px;
+}
+
+.service__intro {
+  margin: 0;
+  padding: 35px 30px 24px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.service__description {
+  margin: 0;
+  padding: 0 28px 35px;
+}
+
+.service__find-hotel-link {
+  text-decoration: none;
+  display: block;
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #81b3d2;
+  margin: 0 18px;
+  padding: 16px 0 16px;
+}
+.service__find-hotel-link[href]:hover {
+  background-color: #669ec0;
+}
+.service__find-hotel-link[href]:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+.service__find-hotel-link[href]:disabled {
+  color: #ffffff;
+  background-color: #e5e5e5;
+  cursor: default;
+}
+
+.social__item {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.social__link {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+.social__link[href]:hover {
+  background-color: #669ec0;
+}
+.social__link[href]:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+/*# sourceMappingURL=style.css.map */
