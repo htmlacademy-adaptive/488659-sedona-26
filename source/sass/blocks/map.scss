@@ -3,4 +3,5 @@
 .map__image {
   @include image-size;
   padding-bottom: 10px;
+  vertical-align: bottom;
 }

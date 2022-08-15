@@ -16,7 +16,8 @@
 
 @mixin list-decoration {
   list-style: none;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
 }
 
@@ -32,5 +33,6 @@
 @mixin container {
   box-sizing: border-box;
   width: 320px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }

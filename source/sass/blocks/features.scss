@@ -17,6 +17,10 @@
   &--blue-theme {
     color: $white-color;
     background-color: $blue-default-color;
+
+    & .features__subtitle {
+      color: inherit;
+    }
   }
 
   &--gray-theme {
@@ -51,4 +55,5 @@
 
 .features__image {
   @include image-size;
+  vertical-align: bottom;
 }
