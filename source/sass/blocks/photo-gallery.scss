@@ -1,0 +1,68 @@
+@use "mixins.scss";
+
+.photo-gallery__wrapper {
+  @include container;
+}
+
+.photo-gallery__page-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 33px 20px 30px;
+}
+
+.photo-gallery__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 20px 44px;
+}
+
+.photo-gallery__item {
+  padding: 24px 20px 25px;
+  border-top: 1px solid $grey-form-hover-color;
+
+  &:last-child {
+    border-bottom: 1px solid $grey-form-hover-color;
+  }
+}
+
+.photo-gallery__item-image {
+  @include image-size;
+  vertical-align: bottom;
+}
+
+.photo-gallery__item-info {
+  text-align: left;
+}
+
+.photo-gallery__caption {
+  padding-top: 15px;
+  padding-right: 100px;
+  padding-bottom: 11px;
+}
+
+.photo-gallery__photo-name,
+.photo-gallery__author-name,
+.photo-gallery__like-counter {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.photo-gallery__photo-name {
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+
+.photo-gallery__author-name {
+  text-transform: none;
+}
+
+.photo-gallery__like-link {
+  @include link-decoration;
+  font-family: inherit;
+  font-weight: 700;
+  color: $black-color;
+}
+
+.photo-gallery__like-counter {
+  padding-left: 37px;
+}
