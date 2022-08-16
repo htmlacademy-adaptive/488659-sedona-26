@@ -14,8 +14,9 @@
 }
 
 .form__title {
-  padding-top: 24px;
-  padding-bottom: 20px;
+  width: 100%;
+  padding: 24px 0 20px;
+  box-shadow: 0 -1px 0 0 $grey-form-hover-color;
 }
 
 .form__box {
@@ -45,4 +46,19 @@
   &[type="text"]::placeholder {
     color: $black-color;
   }
+}
+
+.form__text-field[type="tel"],
+.form__text-field[type="email"] {
+  color: $black-30-color;
+}
+
+.form__list {
+  @include list-decoration;
+  text-align: left;
+}
+
+.form__radio-field,
+.form__checkbox {
+  @include visually-hidden;
 }
