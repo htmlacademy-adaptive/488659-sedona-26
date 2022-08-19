@@ -38,88 +38,88 @@
           <h1 class="feedback__page-title title">Оставьте свой отзыв</h1>
           <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="form__wrapper">
 
-              <fieldset class="form__block form__personal-info">
-                <legend class="form__title title">Представьтесь:</legend>
-                <p class="form__box">
-                  <label class="form__label" for="name">Имя<sup>*</sup>:</label>
-                  <input class="form__text-field" id="name" type="text" name="name" placeholder="Пётр" required>
-                </p>
-                <p class="form__box">
-                  <label class="form__label" for="surname">Фамилия<sup>*</sup>:</label>
-                  <input class="form__text-field" id="surname" type="text" name="surname" placeholder="Пустота" required>
-                </p>
-                <p class="form__box">
-                  <label class="form__label" for="patronymic">Отчество:</label>
-                  <input class="form__text-field" id="patronymic" type="text" name="patronymic" placeholder="Викторович">
-                </p>
-              </fieldset>
+            <fieldset class="form__block form__personal-info">
+              <legend class="form__title title">Представьтесь:</legend>
+              <p class="form__box">
+                <label class="form__label" for="name">Имя<sup>*</sup>:</label>
+                <input class="form__text-field" id="name" type="text" name="name" placeholder="Пётр" required>
+              </p>
+              <p class="form__box">
+                <label class="form__label" for="surname">Фамилия<sup>*</sup>:</label>
+                <input class="form__text-field" id="surname" type="text" name="surname" placeholder="Пустота" required>
+              </p>
+              <p class="form__box">
+                <label class="form__label" for="patronymic">Отчество:</label>
+                <input class="form__text-field" id="patronymic" type="text" name="patronymic" placeholder="Викторович">
+              </p>
+            </fieldset>
 
-              <fieldset class="form__block form__contact-info">
-                <legend class="form__title title">Контактная информация:</legend>
-                <p class="form__box">
-                  <label class="form__label" for="user-phone">Контактный телефон<sup>*</sup>:</label>
-                  <input class="form__text-field form__tel-field" id="user-phone" type="tel" name="user-phone" value="Введите телефон">
-                </p>
-                <p class="form__box">
-                  <label class="form__label" for="user-email">Электронная почта<sup>*</sup>:</label>
-                  <input class="form__text-field form__email-field" id="user-email" type="email" name="user-email" value="Введите e-mail">
-                </p>
-              </fieldset>
+            <fieldset class="form__block form__contact-info">
+              <legend class="form__title title">Контактная информация:</legend>
+              <p class="form__box">
+                <label class="form__label" for="user-phone">Контактный телефон<sup>*</sup>:</label>
+                <input class="form__text-field form__tel-field" id="user-phone" type="tel" name="user-phone" value="Введите телефон">
+              </p>
+              <p class="form__box">
+                <label class="form__label" for="user-email">Электронная почта<sup>*</sup>:</label>
+                <input class="form__text-field form__email-field" id="user-email" type="email" name="user-email" value="Введите e-mail">
+              </p>
+            </fieldset>
 
-              <fieldset class="form__block form__opinion">
-                <legend class="form__title title">Ваше общее впечатление:</legend>
-                <ul class="form__list">
-                  <li class="form__item">
-                    <input class="form__radio-field form__radio-field--checked" id="positive-response" type="radio" name="opinion" value="positive" checked>
-                    <label class="form__label form__label-radio" for="positive-response">Скорее положительное</label>
-                  </li>
-                  <li class="form__item">
-                    <input class="form__radio-field" id="negative-response" type="radio" name="opinion" value="negative">
-                    <label class="form__label form__label-radio" for="negative-response">Скорее отрицательное</label>
-                  </li>
-                  <li class="form__item">
-                    <input class="form__radio-field" id="nо-response" type="radio" name="opinion" value="unknown">
-                    <label class="form__label form__label-radio" for="nо-response">Затрудняюсь ответить</label>
-                  </li>
-                </ul>
-              </fieldset>
+            <fieldset class="form__block form__opinion">
+              <legend class="form__title title">Ваше общее впечатление:</legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <input class="form__radio-field form__radio-field--checked" id="positive-response" type="radio" name="opinion" value="positive" checked>
+                  <label class="form__label form__label-radio" for="positive-response">Скорее положительное</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__radio-field" id="negative-response" type="radio" name="opinion" value="negative">
+                  <label class="form__label form__label-radio" for="negative-response">Скорее отрицательное</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__radio-field" id="nо-response" type="radio" name="opinion" value="unknown">
+                  <label class="form__label form__label-radio" for="nо-response">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </fieldset>
 
-              <fieldset class="form__block form__checklist">
-                <legend class="form__title title">Посещенные достопримечательности:</legend>
-                <ul class="form__list">
-                  <li class="form__item">
-                    <input class="form__checkbox form__checkbox--checked" id="devil-bridge" type="checkbox" name="devil-bridge" checked>
-                    <label class="form__label form__label-checkbox" for="devil-bridge">Мост Дьявола</label>
-                  </li>
-                  <li class="form__item">
-                    <input class="form__checkbox form__checkbox--checked" id="mount-bell" type="checkbox" name="mount-bell" checked>
-                    <label class="form__label form__label-checkbox" for="mount-bell">Гора-Колокол</label>
-                  </li>
-                  <li class="form__item">
-                    <input class="form__checkbox form__checkbox--checked" id="slide-park"  type="checkbox" name="slide-park" checked>
-                    <label class="form__label form__label-checkbox" for="slide-park">Слайд-парк</label>
-                  </li>
-                  <li class="form__item">
-                    <input class="form__checkbox" id="red-rocks" type="checkbox" name="red-rocks">
-                    <label class="form__label form__label-checkbox" for="red-rocks">Красные скалы</label>
-                  </li>
-                </ul>
-              </fieldset>
+            <fieldset class="form__block form__checklist">
+              <legend class="form__title title">Посещенные достопримечательности:</legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <input class="form__checkbox form__checkbox--checked" id="devil-bridge" type="checkbox" name="devil-bridge" checked>
+                  <label class="form__label form__label-checkbox" for="devil-bridge">Мост Дьявола</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__checkbox form__checkbox--checked" id="mount-bell" type="checkbox" name="mount-bell" checked>
+                  <label class="form__label form__label-checkbox" for="mount-bell">Гора-Колокол</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__checkbox form__checkbox--checked" id="slide-park"  type="checkbox" name="slide-park" checked>
+                  <label class="form__label form__label-checkbox" for="slide-park">Слайд-парк</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__checkbox" id="red-rocks" type="checkbox" name="red-rocks">
+                  <label class="form__label form__label-checkbox" for="red-rocks">Красные скалы</label>
+                </li>
+              </ul>
+            </fieldset>
 
-              <fieldset class=" form__block form__comment">
-                <legend class="form__title title">Опишите свои эмоции:</legend>
-                <p class="form__box">
-                  <label class="form__label visually-hidden" for="comment">Текст комментария</label>
-                  <textarea class="form__text-field form__textarea-field" id="comment" name="comment" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
-                </p>
-              </fieldset>
+            <fieldset class=" form__block form__comment">
+              <legend class="form__title title">Опишите свои эмоции:</legend>
+              <p class="form__box">
+                <label class="form__label" for="comment">Текст комментария</label>
+                <textarea class="form__text-field form__textarea-field" id="comment" name="comment" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+              </p>
+            </fieldset>
 
+            <div class="form__submit-wrapper">
               <button class="form__button button" type="submit" name="send-form">Отправить отзыв</button>
-              <small class="form__footnote"><sup>*</sup> — Обязательные поля</small>
-
+              <p class="form__footnote"><small><sup>*</sup> — Обязательные поля</small></p>
             </div>
+
           </form>
         </div>
       </section>
