@@ -1,0 +1,49 @@
+@use "mixins.scss";
+
+.modal {
+  @include container;
+  // position: absolute;
+}
+
+.modal__title,
+.modal__description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.modal--warning {
+  & .modal__title {
+    padding: 45px 42px 30px;
+  }
+
+  & .modal__description {
+    padding: 0 42px 28px;
+  }
+
+  & .modal__close-button {
+    width: 180px;
+    margin: 0 auto;
+    padding: 18px 63px 14px;
+  }
+}
+
+.modal__wrapper {
+  padding: 20px;
+  background-color: $grey-form-color;
+}
+
+.modal--information {
+  & .modal__title {
+    padding: 39px 38px 30px;
+  }
+
+  & .modal__description {
+    padding: 0 38px 53px;
+  }
+
+  & .modal__close-button {
+    width: 280px;
+    margin: 0 auto;
+    padding: 16px 60px;
+  }
+}
