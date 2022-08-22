@@ -36,3 +36,21 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+// @media (min-width: $tablet-width) {
+//   @mixin container {
+//     box-sizing: border-box;
+//     width: $tablet-width;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   @mixin container {
+//     box-sizing: border-box;
+//     width: $desktop-width;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
