@@ -1,0 +1,19 @@
+@use "mixins.scss";
+
+.feedback__wrapper {
+  @include container;
+}
+
+.feedback__page-title,
+.feedback__description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.feedback__page-title {
+  padding: 36px 20px 24px;
+}
+
+.feedback__description {
+  padding: 0 20px 28px;
+}

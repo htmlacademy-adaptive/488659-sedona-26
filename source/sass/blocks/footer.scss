@@ -1,0 +1,21 @@
+@use "mixins.scss";
+
+.footer__wrapper {
+  @include container;
+}
+
+.footer__hashtag {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 28px 50px 33px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700px;
+  color: $black-color;
+}
+
+.footer__list {
+  @include list-decoration;
+  padding-bottom: 40px;
+}

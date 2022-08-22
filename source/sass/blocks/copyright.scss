@@ -1,0 +1,26 @@
+@use "mixins.scss";
+
+.copyright__link {
+  @include link-decoration;
+
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  color: $black-color;
+
+  margin: 0;
+  padding: 0 55px 20px;
+
+  &[href]:hover {
+    color: $blue-default-color;
+  }
+
+  &[href]:active {
+    color: $grey-click-color;
+  }
+}

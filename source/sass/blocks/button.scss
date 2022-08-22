@@ -1,0 +1,31 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  border: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  color: $white-color;
+
+  background-color: $blue-default-color;
+
+  &:hover {
+    background-color: $blue-hover-color;
+  }
+
+  &:active {
+    color: $white-30-color;
+    background-color: $blue-click-color;
+  }
+
+  &:disabled {
+    color: $white-color;
+    background-color: $grey-form-hover-color;
+    cursor: default;
+  }
+}

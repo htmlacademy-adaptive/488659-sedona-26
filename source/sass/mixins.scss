@@ -1,0 +1,38 @@
+@mixin visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin list-decoration {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+@mixin link-decoration {
+  text-decoration: none;
+}
+
+@mixin image-size {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin container {
+  box-sizing: border-box;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}

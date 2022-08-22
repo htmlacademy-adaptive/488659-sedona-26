@@ -1,0 +1,8 @@
+@use "mixins.scss";
+
+.main__page-title {
+  @include container;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 32px 25px 35px;
+}

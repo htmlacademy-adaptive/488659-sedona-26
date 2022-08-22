@@ -1,0 +1,24 @@
+@use "mixins.scss";
+
+.video-presentation__wrapper {
+  @include container;
+}
+
+.video-presentation__title,
+.video-presentation__description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.video-presentation__title {
+  padding: 17px 27px 32px;
+}
+
+.video-presentation__description {
+  padding: 0 27px 38px;
+}
+
+.video-presentation__video-file {
+  @include image-size;
+  vertical-align: bottom;
+}
