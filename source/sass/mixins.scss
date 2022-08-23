@@ -35,22 +35,12 @@
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
-
-// @media (min-width: $tablet-width) {
-//   @mixin container {
-//     box-sizing: border-box;
-//     width: $tablet-width;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   @mixin container {
-//     box-sizing: border-box;
-//     width: $desktop-width;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-// }
