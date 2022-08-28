@@ -111,7 +111,12 @@
     padding-top: 56px;
   }
 
-  .main-nav--nojs .main-nav__toggle {
+  .main-nav--opened .promo--inner {
+    padding-top: 223px;
+  }
+
+  .main-nav--nojs .main-nav__toggle,
+  .main-nav--nojs .main-nav__logo {
     display: none;
   }
 
@@ -139,7 +144,6 @@
     align-items: center;
     width: 768px;
     max-width: 1000px;
-    min-height: 56px;
     background-color: $white-color;
   }
 
