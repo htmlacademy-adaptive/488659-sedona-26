@@ -85,7 +85,8 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 92px;
+      left: 50%;
+      transform: translateX(-50%);
       width: 75px;
       height: 72px;
 
@@ -103,7 +104,8 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 90px;
+      left: 50%;
+      transform: translateX(-50%);
       width: 76px;
       height: 68px;
 
@@ -121,7 +123,8 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 96px;
+      left: 50%;
+      transform: translateX(-50%);
       width: 64px;
       height: 75px;
 
@@ -143,26 +146,14 @@
       padding-right: 60px;
     }
 
-    &--house::before {
-      left: 163px;
-    }
-
     &--food .benefits__description {
       padding-left: 50px;
       padding-right: 50px;
     }
 
-    &--food::before {
-      left: 162px;
-    }
-
     &--gift .benefits__description {
       padding-left: 104px;
       padding-right: 104px;
-    }
-
-    &--gift::before {
-      left: 169px;
     }
   }
 }

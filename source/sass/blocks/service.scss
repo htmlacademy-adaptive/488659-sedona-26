@@ -34,7 +34,8 @@
   color: $white-color;
   background-color: $blue-default-color;
 
-  margin: 0 18px;
+  width: 284px;
+  margin: 0 auto;
   padding: 16px 0 16px;
 
   &[href]:hover {
@@ -50,5 +51,25 @@
     color: $white-color;
     background-color: $grey-form-hover-color;
     cursor: default;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .service__title {
+    padding: 60px 155px 32px;
+  }
+
+  .service__description {
+    padding: 0 155px 40px;
+  }
+
+  .service__find-hotel-link {
+    width: 458px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .service__description {
+    padding: 0 380px 46px;
   }
 }
