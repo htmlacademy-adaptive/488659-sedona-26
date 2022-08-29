@@ -17,5 +17,18 @@
 
 .footer__list {
   @include list-decoration;
-  padding-bottom: 40px;
+  margin: 0 auto;
+  padding-bottom: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer__list {
+    padding-bottom: 0;
+  }
 }

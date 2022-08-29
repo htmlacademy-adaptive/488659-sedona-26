@@ -1,6 +1,15 @@
 @use "mixins.scss";
 
+.social {
+  width: 156px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .social__item {
+  width: 48px;
+  height: 48px;
   color: $white-color;
   background-color: $blue-default-color;
 }
@@ -18,5 +27,15 @@
   &[href]:active {
     color: $white-30-color;
     background-color: $blue-click-color;
+  }
+}
+
+.social__icon {
+  @include image-size;
+  vertical-align: bottom;
+  margin: 17px auto;
+
+  &--telegram {
+    margin: 15px auto;
   }
 }
