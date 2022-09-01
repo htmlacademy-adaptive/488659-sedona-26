@@ -25,6 +25,10 @@
   }
 }
 
+.photo-gallery__link {
+  @include link-decoration;
+}
+
 .photo-gallery__item-image {
   @include image-size;
   vertical-align: bottom;
@@ -65,4 +69,100 @@
 
 .photo-gallery__like-counter {
   padding-left: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-gallery__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 60px;
+  }
+
+  .photo-gallery__item {
+    padding: 0;
+    border-top: none;
+
+    &:nth-child(2n-1) .photo-gallery__item-info {
+      background-color: $grey-gallery-color;
+    }
+
+    &:first-child {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+
+    &:first-child .photo-gallery__item-image {
+      width: 648px;
+      height: 400px;
+    }
+
+    &:first-child .photo-gallery__item-info {
+      background-color: $grey-form-color;
+    }
+  }
+
+  .photo-gallery__item-image {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo-gallery__item-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 22px 20px 15px;
+    background-color: $grey-form-color;
+  }
+
+  .photo-gallery__caption {
+    padding: 0;
+  }
+
+  .photo-gallery__photo-name {
+    padding: 0;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-gallery__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+  }
+
+  .photo-gallery__item {
+    position: relative;
+
+    &:first-child .photo-gallery__item-image {
+      width: 1200px;
+    }
+
+    &:first-child .photo-gallery__item-info {
+      width: 1200px;
+    }
+
+    &:nth-child(2n-1) .photo-gallery__item-info {
+      background-color: $black-30-color;
+    }
+  }
+
+  .photo-gallery__item-image {
+    width: 400px;
+  }
+
+  .photo-gallery__item-info {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 80px;
+
+    color: $white-color;
+    background-color: $black-30-color;
+  }
+
+  .photo-gallery__like-link {
+    color: $white-color;
+  }
 }
