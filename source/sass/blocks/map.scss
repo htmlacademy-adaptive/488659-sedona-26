@@ -1,7 +1,51 @@
 @use "mixins.scss";
 
+.map__wrapper {
+  position: relative;
+  padding-bottom: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 161px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 17px;
+    height: 17px;
+    border: 5px solid $white-color;
+    border-radius: 50%;
+    background-color: $blue-mark-color;
+  }
+}
+
 .map__image {
   @include image-size;
-  padding-bottom: 10px;
+
   vertical-align: bottom;
+  background-color: $light-grey-color;
+}
+
+@media (min-width: $tablet-width) {
+  .map__wrapper {
+    padding-bottom: 0;
+
+    &::before {
+      top: 164px;
+    }
+  }
+
+  .map__image {
+    width: 768px;
+    height: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__wrapper::before {
+    top: 162px;
+  }
+
+  .map__image {
+    width: 1200px;
+  }
 }
