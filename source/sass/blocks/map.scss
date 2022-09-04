@@ -2,7 +2,7 @@
 
 .map__wrapper {
   position: relative;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   &::before {
     content: "";
@@ -21,13 +21,17 @@
 .map__image {
   @include image-size;
 
-  vertical-align: bottom;
+  // vertical-align: bottom;
+  display: block;
+  width: 320px;
+  height: 350px;
+  border: none;
   background-color: $light-grey-color;
 }
 
 @media (min-width: $tablet-width) {
   .map__wrapper {
-    padding-bottom: 0;
+    margin-bottom: 0;
 
     &::before {
       top: 164px;
