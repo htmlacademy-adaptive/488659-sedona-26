@@ -3,6 +3,7 @@
 .modal {
   @include container;
   // position: absolute;
+  background-color: $white-color;
 }
 
 .modal__title,
@@ -45,5 +46,15 @@
     width: 280px;
     margin: 0 auto;
     padding: 16px 60px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal--warning {
+    width: 400px;
+  }
+
+  .modal--information {
+    width: 640px;
   }
 }
