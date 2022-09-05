@@ -2,11 +2,13 @@
 
 .features__wrapper {
   @include container;
+  margin-bottom: 32px;
 }
 
 .features__intro {
   margin: 0;
-  padding: 0 25px 16px;
+  margin-bottom: 16px;
+  padding: 0 25px;
 }
 
 .features__list {
@@ -14,6 +16,8 @@
 }
 
 .features__item {
+  position: relative;
+
   &--blue-theme {
     color: $white-color;
     background-color: $blue-default-color;
@@ -35,10 +39,21 @@
 
 .features__subtitle {
   margin: 0;
-  padding: 24px 20px 11px;
+  margin-bottom: 11px;
+  padding: 24px 31px 0;
 
   &--blue-theme {
     color: inherit;
+  }
+
+  &--underline::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 18px;
+    width: 284px;
+    height: 1px;
+    background-color: $grey-line-color;
   }
 }
 
@@ -50,12 +65,13 @@
 
 .features__number {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 17px;
+  padding: 0 31px;
 }
 
 .features__description {
   margin: 0;
-  padding: 17px 31px 24px;
+  padding: 0 31px 24px;
 }
 
 .features__image {
@@ -64,8 +80,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features__wrapper {
+    margin-bottom: 60px;
+  }
+
   .features__intro {
-    padding: 0 30px 55px;
+    margin-bottom: 55px;
+    padding: 0 30px;
   }
 
   .features__list {
@@ -86,14 +107,41 @@
       padding-top: 0;
       background-image: none;
     }
+
+    &--gray-theme {
+      padding: 41px 34px 41px 33px;
+    }
+
+    &--gray-theme .features__subtitle {
+      padding: 0 30px;
+    }
+
+    &--gray-theme .features__number {
+      padding: 0;
+    }
+
+    &--gray-theme .features__description {
+      margin-bottom: 0;
+      padding: 0;
+    }
   }
 
   .features__subtitle {
-    padding: 40px 36px 16px;
+    margin-bottom: 16px;
+    padding: 40px 36px 0;
+
+    &--underline::after {
+      display: none;
+    }
+  }
+
+  .features__number {
+    margin-bottom: 26px;
   }
 
   .features__description {
-    padding: 26px 31px 44px;
+    margin-bottom: 44px;
+    padding: 0 31px;
   }
 
   .features__image {
@@ -122,15 +170,28 @@
 
 @media (min-width: $desktop-width) {
   .features__intro {
-    padding: 0 50px 44px;
+    margin-bottom: 44px;
+    padding: 0 50px;
+  }
+
+  .features__item {
+    &--gray-theme {
+      padding: 42px 43px 62px 42px;
+    }
+
+    &--gray-theme .features__subtitle {
+      padding: 0 90px;
+    }
   }
 
   .features__subtitle {
-    padding: 47px 110px 16px;
+    margin-bottom: 16px;
+    padding: 47px 110px 0;
   }
 
   .features__description {
-    padding: 26px 65px 56px;
+    margin-bottom: 56px;
+    padding: 0 65px;
   }
 
   .features__image {

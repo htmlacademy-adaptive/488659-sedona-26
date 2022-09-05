@@ -13,7 +13,7 @@
 .benefits__item {
   position: relative;
   padding-left: 50px;
-  padding-bottom: 22px;
+  margin-bottom: 22px;
 
   &--house::before {
     content: "";
@@ -61,7 +61,7 @@
 }
 
 .benefits__title {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: $tablet-width) {
@@ -73,6 +73,7 @@
   }
 
   .benefits__item {
+    margin-bottom: 0;
     padding: 0;
     padding-top: 100px;
 
@@ -135,7 +136,8 @@
   }
 
   .benefits__title {
-    padding-bottom: 26px;
+    margin-bottom: 26px;
+    padding: 0 35px;
   }
 }
 

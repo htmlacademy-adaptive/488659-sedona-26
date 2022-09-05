@@ -172,6 +172,8 @@
 
 .form__comment .form__box {
   margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .form__submit-wrapper {
@@ -292,6 +294,10 @@
   .form__label-checkbox {
     margin-left: 46px;
     padding-bottom: 26px;
+  }
+
+  .form__comment .form__box {
+    margin: 0;
   }
 
   .form__submit-wrapper {

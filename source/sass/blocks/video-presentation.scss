@@ -28,7 +28,6 @@
   height: 100%;
   border: none;
   background-color: transparent;
-  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -40,6 +39,7 @@
     height: 54px;
     background-image: url("../img/icon-play.svg");
     background-repeat: no-repeat;
+    cursor: pointer;
   }
 }
 
