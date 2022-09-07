@@ -65,6 +65,20 @@
   }
 }
 
+.form__tel-field {
+  padding-right: 60px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.form__email-field {
+  padding-right: 60px;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
 .form__list {
   @include list-decoration;
   text-align: left;
