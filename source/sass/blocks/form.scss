@@ -54,14 +54,11 @@
     background-color: $grey-form-hover-color;
   }
 
-  &:hover::placeholder {
-    color: $black-color;
-  }
-
   &:focus {
     background-color: transparent;
     color: $black-color;
     outline: 4px solid $grey-form-hover-color;
+    outline-offset: -4px;
   }
 }
 
@@ -125,6 +122,10 @@
     background-color: $grey-form-down-color;
   }
 
+  .form__radio-field:focus + &::before {
+    outline: 2px solid $blue-default-color;
+  }
+
   .form__radio-field:checked + &::after {
     position: absolute;
     content: "";
@@ -159,6 +160,10 @@
 
   &:active::before {
     background-color: $grey-form-down-color;
+  }
+
+  .form__checkbox:focus + &::before {
+    outline: 2px solid $blue-default-color;
   }
 
   .form__checkbox:checked + &::after {
