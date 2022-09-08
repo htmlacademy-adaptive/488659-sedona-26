@@ -8,3 +8,19 @@
 .page-header__promo {
   @include container;
 }
+
+.page-header__main-nav {
+  margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__main-nav {
+    margin-bottom: 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__main-nav {
+    margin-bottom: 59px;
+  }
+}

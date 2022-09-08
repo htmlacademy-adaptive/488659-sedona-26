@@ -2,12 +2,13 @@
 
 .service__wrapper {
   @include container;
-  padding-bottom: 49px;
+  margin-bottom: 49px;
 }
 
 .service__title {
   margin: 0;
-  padding: 35px 30px 24px;
+  margin-bottom: 24px;
+  padding: 0 30px;
 
   font-size: 21px;
   line-height: 26px;
@@ -18,7 +19,8 @@
 
 .service__description {
   margin: 0;
-  padding: 0 28px 35px;
+  margin-bottom: 35px;
+  padding: 0 28px;
 }
 
 .service__find-hotel-link {
@@ -55,12 +57,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .service__wrapper {
+    margin-bottom: 58px;
+  }
+
   .service__title {
-    padding: 60px 155px 32px;
+    margin-bottom: 32px;
+    padding: 0 155px;
   }
 
   .service__description {
-    padding: 0 155px 40px;
+    margin-bottom: 40px;
+    padding: 0 155px;
   }
 
   .service__find-hotel-link {
@@ -69,7 +77,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .service__wrapper {
+    margin-bottom: 66px;
+  }
+
   .service__description {
-    padding: 0 380px 46px;
+    margin-bottom: 46px;
+    padding: 0 380px;
   }
 }

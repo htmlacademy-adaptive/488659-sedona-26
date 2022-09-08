@@ -65,6 +65,20 @@
   }
 }
 
+.form__tel-field {
+  padding-right: 60px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.form__email-field {
+  padding-right: 60px;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
 .form__list {
   @include list-decoration;
   text-align: left;
@@ -172,6 +186,8 @@
 
 .form__comment .form__box {
   margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .form__submit-wrapper {
@@ -292,6 +308,10 @@
   .form__label-checkbox {
     margin-left: 46px;
     padding-bottom: 26px;
+  }
+
+  .form__comment .form__box {
+    margin: 0;
   }
 
   .form__submit-wrapper {

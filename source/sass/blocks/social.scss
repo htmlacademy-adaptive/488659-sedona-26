@@ -25,8 +25,11 @@
   }
 
   &[href]:active {
-    color: $white-30-color;
     background-color: $blue-click-color;
+  }
+
+  &[href]:active .social__icon {
+    opacity: 0.3;
   }
 }
 

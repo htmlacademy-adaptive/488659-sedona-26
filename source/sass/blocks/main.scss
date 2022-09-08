@@ -3,18 +3,19 @@
 .main__page-title {
   @include container;
   margin-top: 0;
-  margin-bottom: 0;
-  padding: 32px 25px 35px;
+  margin-bottom: 35px;
+  padding: 0 25px;
 }
 
 @media (min-width: $tablet-width) {
   .main__page-title {
-    padding: 47px 30px 32px;
+    margin-bottom: 32px;
+    padding: 0 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main__page-title {
-    padding: 59px 50px 32px;
+    padding: 0 50px;
   }
 }
