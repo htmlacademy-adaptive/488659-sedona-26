@@ -110,34 +110,25 @@
     display: none;
   }
 
-  .main-nav--closed .page-header__promo {
-    margin-top: -40px;
-  }
-
-  .main-nav--opened .main-nav__logo {
-    display: none;
-  }
-
   .main-nav--opened .main-nav__list {
     position: absolute;
+    top: 0;
     width: 100%;
   }
 
-  .main-nav--opened .page-header__promo {
-    padding-top: 56px;
-  }
-
   .main-nav--opened .promo--inner {
-    padding-top: 223px;
+    padding-top: 130px;
   }
 
-  .main-nav--nojs .main-nav__toggle,
-  .main-nav--nojs .main-nav__logo {
+  .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 
   .main-nav--nojs .main-nav__list {
     display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
 

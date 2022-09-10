@@ -1,5 +1,9 @@
+@use "mixins.scss";
+
 .logo__image {
+  @include image-size;
   width: 185px;
   height: 96px;
   vertical-align: bottom;
+  object-fit: contain;
 }

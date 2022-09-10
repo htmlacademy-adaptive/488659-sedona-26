@@ -9,6 +9,10 @@
   @include container;
 }
 
+.page-header__promo {
+  margin-top: -40px;
+}
+
 .page-header__main-nav {
   margin-bottom: 32px;
 }
@@ -16,6 +20,10 @@
 @media (min-width: $tablet-width) {
   .page-header__main-nav {
     margin-bottom: 47px;
+  }
+
+  .page-header__promo {
+    margin-top: 0;
   }
 }
 
