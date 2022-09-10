@@ -41,7 +41,11 @@
             <div class="photo-gallery__wrapper">
               <article class="photo-gallery__item">
                 <a class="photo-gallery__link" href="#" target="_blank">
-                  <img class="photo-gallery__item-image" src="./img/gallery-photo-road-mobile.jpg" width="280" height="280" alt="Фотография дороги">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/gallery-photo-road-desktop@1x.jpg 1x, ./img/gallery-photo-road-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/gallery-photo-road-tablet@1x.jpg 1x, ./img/gallery-photo-road-tablet@2x.jpg 2x">
+                    <img class="photo-gallery__item-image" src="./img/gallery-photo-road-mobile@1x.jpg" srcset="./img/gallery-photo-road-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография дороги">
+                  </picture>
                 </a>
                 <div class="photo-gallery__item-info">
                   <div class="photo-gallery__caption">
@@ -55,7 +59,11 @@
               </article>
               <article class="photo-gallery__item">
                 <a class="photo-gallery__link" href="#" target="_blank">
-                  <img class="photo-gallery__item-image" src="./img/gallery-photo-plant-mobile.jpg" width="280" height="280" alt="Фотография растения">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/gallery-photo-plant-desktop@1x.jpg 1x, ./img/gallery-photo-plant-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/gallery-photo-plant-tablet@1x.jpg 1x, ./img/gallery-photo-plant-tablet@2x.jpg 2x">
+                    <img class="photo-gallery__item-image" src="./img/gallery-photo-plant-mobile@1x.jpg" srcset="./img/gallery-photo-plant-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография растения">
+                  </picture>
                 </a>
                 <div class="photo-gallery__item-info">
                   <div class="photo-gallery__caption">
@@ -69,7 +77,11 @@
               </article>
               <article class="photo-gallery__item">
                 <a class="photo-gallery__link" href="#" target="_blank">
-                  <img class="photo-gallery__item-image" src="./img/gallery-photo-road-2-mobile.jpg" width="280" height="280" alt="Фотография горной дороги">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/gallery-photo-road-2-desktop@1x.jpg 1x, ./img/gallery-photo-road-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/gallery-photo-road-2-tablet@1x.jpg 1x, ./img/gallery-photo-road-2-tablet@2x.jpg 2x">
+                    <img class="photo-gallery__item-image" src="./img/gallery-photo-road-2-mobile@1x.jpg" srcset="./img/gallery-photo-road-2-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография горной дороги">
+                  </picture>
                 </a>
                 <div class="photo-gallery__item-info">
                   <div class="photo-gallery__caption">
@@ -83,7 +95,11 @@
               </article>
               <article class="photo-gallery__item">
                 <a class="photo-gallery__link" href="#" target="_blank">
-                  <img class="photo-gallery__item-image" src="./img/gallery-photo-bridge-mobile.jpg" width="280" height="280" alt="Фотография Моста Дьявола">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/gallery-photo-bridge-desktop@1x.jpg 1x, ./img/gallery-photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/gallery-photo-bridge-tablet@1x.jpg 1x, ./img/gallery-photo-bridge-tablet@2x.jpg 2x">
+                    <img class="photo-gallery__item-image" src="./img/gallery-photo-bridge-mobile@1x.jpg" srcset="./img/gallery-photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография Моста Дьявола">
+                  </picture>
                 </a>
                 <div class="photo-gallery__item-info">
                   <div class="photo-gallery__caption">
@@ -104,9 +120,11 @@
                   <button class="video-presentation__button">
                     <span class="video-presentation__play">Воспроизвести</span>
                   </button>
-                  <video class="video-presentation__video-file" width="280" height="177" poster="./img/video-mobile.jpg">
-                    "Your browser doesn`t support HTML5 video tag. "
-                  </video>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+                    <img class="video-presentation__video-file" src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видеопрезентация о городе Седона">
+                  </picture>
               </div>
           </section>
       </main>
