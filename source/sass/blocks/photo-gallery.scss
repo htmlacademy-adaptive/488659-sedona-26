@@ -69,19 +69,17 @@
   color: $black-color;
 }
 
+.photo-gallery__icon-like {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 23px;
+  height: 21px;
+  fill: $black-30-color;
+}
+
 .photo-gallery__like-counter {
   padding-left: 37px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: -5px;
-    left: 0;
-    width: 23px;
-    height: 21px;
-    background-image: url("../img/icon-like.svg");
-    background-repeat: no-repeat;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -184,6 +182,10 @@
 
     color: $white-color;
     background-color: $black-30-color;
+  }
+
+  .photo-gallery__icon-like {
+    fill: $white-color;
   }
 
   .photo-gallery__like-link {

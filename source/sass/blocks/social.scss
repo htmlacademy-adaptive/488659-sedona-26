@@ -29,7 +29,7 @@
   }
 
   &[href]:active .social__icon {
-    opacity: 0.3;
+    fill: $white-30-color;
   }
 }
 
@@ -37,6 +37,7 @@
   @include image-size;
   vertical-align: bottom;
   margin: 17px auto;
+  fill: $white-color;
 
   &--telegram {
     margin: 15px auto;
