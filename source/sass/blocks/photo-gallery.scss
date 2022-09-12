@@ -33,6 +33,7 @@
 .photo-gallery__item-image {
   @include image-size;
   vertical-align: bottom;
+  background-color: $grey-form-hover-color;
 }
 
 .photo-gallery__item-info {

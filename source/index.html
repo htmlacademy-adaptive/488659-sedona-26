@@ -13,7 +13,7 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page-header">
-        <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
+        <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs"> <!-- Классы "main-nav--closed" и "main-nav--opened" закрывают и открывают мобильное меню, а также меняют внешний вид кнопки закрытия/открытия -->
           <a class="main-nav__logo logo">
             <img class="logo__image" src="./img/logo.svg" width="185" height="96" alt="Логотип города Седона">
           </a>
@@ -47,7 +47,7 @@
                 <h2 class="features__subtitle features__subtitle--blue-theme title">Настоящий городок</h2>
                 <p class="features__number">— №1 —</p>
                 <p class="features__description">Седона не атракцион для туристов, там течет своя жизнь</p>
-                <picture>
+                <picture class="features__image-box">
                   <source media="(min-width: 1200px)" srcset="./img/photo-city-desktop@1x.jpg 1x, ./img/photo-city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/photo-city-tablet@1x.jpg 1x, ./img/photo-city-tablet@2x.jpg 2x">
                   <img class="features__image" src="./img/photo-city-mobile@1x.jpg" srcset="./img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Фото города Седона">
@@ -71,10 +71,10 @@
                 <h2 class="features__subtitle features__subtitle--blue-theme title">Там есть Мост Дьявола</h2>
                 <p class="features__number">— №2 —</p>
                 <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-                <picture>
+                <picture class="features__image-box features__image-box--other-order">
                   <source media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop@1x.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet@1x.jpg 1x, ./img/photo-bridge-tablet@2x.jpg 2x">
-                  <img class="features__image features__image--other-order" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фотография Моста Дьявола">
+                  <img class="features__image" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фотография Моста Дьявола">
                 </picture>
               </li>
               <li class="features__item features__item--gray-theme">

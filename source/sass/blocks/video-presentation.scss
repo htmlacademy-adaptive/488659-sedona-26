@@ -52,6 +52,7 @@
 .video-presentation__video-file {
   @include image-size;
   vertical-align: bottom;
+  background-color: $grey-form-hover-color;
 }
 
 @media (min-width: $tablet-width) {
