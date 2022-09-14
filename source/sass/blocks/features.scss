@@ -2,7 +2,7 @@
 
 .features__wrapper {
   @include container;
-  margin-bottom: 32px;
+  margin-bottom: 37px;
 }
 
 .features__intro {
@@ -41,7 +41,7 @@
 .features__subtitle {
   margin: 0;
   margin-bottom: 11px;
-  padding: 24px 31px 0;
+  padding: 24px 31px 0 27px;
 
   &--blue-theme {
     color: inherit;
@@ -58,21 +58,44 @@
   }
 }
 
-.features__number,
-.features__description {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
 .features__number {
   margin-top: 0;
   margin-bottom: 17px;
-  padding: 0 31px;
+  padding: 0 31px 0 27px;
 }
 
 .features__description {
   margin: 0;
-  padding: 0 31px 24px;
+  padding: 0 31px 39px 23px;
+}
+
+.features__item--bridge .features__subtitle {
+  padding-top: 40px;
+}
+
+.features__item--bridge .features__description {
+  padding-left: 30px;
+  padding-bottom: 35px;
+}
+
+.features__item--area .features__subtitle {
+  padding-top: 26px;
+  padding-left: 28px;
+}
+
+.features__item--area .features__description {
+  padding-left: 29px;
+  padding-bottom: 24px;
+}
+
+.features__item--road .features__description {
+  padding-left: 30px;
+  padding-bottom: 27px;
+}
+
+.features__item--tourists .features__description {
+  padding-left: 32px;
+  padding-bottom: 26px;
 }
 
 .features__image {

@@ -7,7 +7,7 @@
 
 .service__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   padding: 0 30px;
 
   font-size: 21px;
@@ -19,7 +19,7 @@
 
 .service__description {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   padding: 0 28px;
 }
 
@@ -27,6 +27,7 @@
   @include link-decoration;
 
   display: block;
+  box-sizing: border-box;
   font-family: inherit;
   font-size: 21px;
   line-height: 1.24;

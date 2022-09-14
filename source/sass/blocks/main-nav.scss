@@ -51,7 +51,7 @@
 
   color: $white-color;
 
-  padding: 17px 0 12px;
+  padding: 17px 0 13px;
 
   &:hover {
     background-color: $blue-hover-color;
@@ -88,8 +88,8 @@
   & .main-nav__toggle::before {
     content: "";
     position: absolute;
-    top: 17px;
-    right: 20px;
+    top: 16px;
+    right: 19px;
     width: 23px;
     height: 23px;
     background-image: url("../img/icon-cross.svg");

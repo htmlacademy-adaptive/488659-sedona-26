@@ -3,8 +3,8 @@
 .main__page-title {
   @include container;
   margin-top: 0;
-  margin-bottom: 35px;
-  padding: 0 25px;
+  margin-bottom: 37px;
+  padding: 0 27px 0 25px;
 }
 
 @media (min-width: $tablet-width) {

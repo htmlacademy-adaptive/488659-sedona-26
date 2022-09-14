@@ -16,7 +16,7 @@
   color: $black-color;
 
   margin: 0;
-  margin-right: 45px;
+  margin-right: 44px;
 
   &[href]:hover {
     color: $blue-default-color;
@@ -30,8 +30,8 @@
 .copyright__icon {
   @include image-size;
   position: absolute;
-  top: -6px;
-  left: 122px;
+  top: -7px;
+  left: 120px;
   width: 27px;
   height: 34px;
   fill: currentColor;
