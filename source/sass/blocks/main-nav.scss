@@ -141,7 +141,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -96px;
+    margin-left: -93px;
   }
 
   .main-nav__toggle {
@@ -167,7 +167,7 @@
     }
 
     &:nth-child(2) {
-      margin-right: 153px;
+      margin-right: 154px;
     }
 
     &--active .main-nav__link {
@@ -176,6 +176,7 @@
   }
 
   .main-nav__link {
+    padding: 19px 0 16px;
     font-size: 14px;
     line-height: 1.5;
     font-weight: 700;

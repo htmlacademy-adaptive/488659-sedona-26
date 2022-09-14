@@ -151,8 +151,10 @@
   }
 
   .features__subtitle {
-    margin-bottom: 16px;
-    padding: 40px 36px 0;
+    font-size: 21px;
+    line-height: 1.24;
+    margin-bottom: 13px;
+    padding: 39px 36px 0;
 
     &--underline::after {
       display: none;
@@ -160,12 +162,26 @@
   }
 
   .features__number {
-    margin-bottom: 26px;
+    margin-bottom: 23px;
+    padding-left: 29px;
   }
 
   .features__description {
     margin-bottom: 44px;
     padding: 0 31px;
+  }
+
+  .features__item--bridge .features__subtitle {
+    padding: 41px 53px 0;
+  }
+
+  .features__item--bridge .features__description {
+    margin-bottom: 41px;
+    padding: 0 31px 0 30px;
+  }
+
+  .features__item--tourists .features__description {
+    padding: 0 5px 0;
   }
 
   .features__image-box {

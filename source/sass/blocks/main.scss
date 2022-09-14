@@ -9,8 +9,10 @@
 
 @media (min-width: $tablet-width) {
   .main__page-title {
-    margin-bottom: 32px;
-    padding: 0 35px;
+    margin-bottom: 31px;
+    padding: 0 35px 0 34px;
+    font-size: 21px;
+    line-height: 1.24;
   }
 }
 

@@ -101,7 +101,7 @@
     &--house::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 3px;
       left: 50%;
       transform: translateX(-50%);
       width: 75px;
@@ -120,7 +120,7 @@
     &--food::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 5px;
       left: 50%;
       transform: translateX(-50%);
       width: 76px;
@@ -152,8 +152,18 @@
   }
 
   .benefits__title {
+    font-size: 21px;
+    line-height: 1.24;
     margin-bottom: 26px;
     padding: 0 35px;
+  }
+
+  .benefits__item--house .benefits__title {
+    padding-left: 34px;
+  }
+
+  .benefits__item--food .benefits__title {
+    padding-left: 34px;
   }
 }
 
