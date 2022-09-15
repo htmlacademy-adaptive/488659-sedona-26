@@ -85,16 +85,26 @@
 }
 
 @media (min-width: $desktop-width) {
+  .video-presentation__wrapper {
+    margin-bottom: 83px;
+  }
+
   .video-presentation__title {
     padding: 0 377px;
   }
 
   .video-presentation__description {
+    margin-bottom: 86px;
     padding: 0 377px;
   }
 
   .video-presentation__video-file {
     width: 800px;
     height: 500px;
+  }
+
+  .video-presentation__button::before {
+    left: 50%;
+    transform: translateX(-25px);
   }
 }

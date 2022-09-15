@@ -38,5 +38,9 @@
 @media (min-width: $desktop-width) {
   .page-header__main-nav {
     margin-bottom: 59px;
+
+    &--inner {
+      margin-bottom: 100px;
+    }
   }
 }
