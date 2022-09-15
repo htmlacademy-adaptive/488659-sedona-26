@@ -13,6 +13,10 @@
   color: $dark-grey-color;
 
   background-color: $grey-form-color;
+
+  &--modal-show {
+    overflow: hidden;
+  }
 }
 
 .page__wrapper {
