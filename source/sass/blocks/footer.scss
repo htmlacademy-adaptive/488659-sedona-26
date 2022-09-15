@@ -2,7 +2,7 @@
 
 .footer__wrapper {
   @include container;
-  padding: 28px 70px 23px 76px;
+  padding: 28px 70px 23px 73px;
 }
 
 .footer__hashtag {
@@ -19,7 +19,7 @@
 .footer__list {
   @include list-decoration;
   margin: 0 auto;
-  margin-bottom: 47px;
+  margin-bottom: 45px;
 }
 
 .footer__copyright {
@@ -34,7 +34,7 @@
     align-items: center;
     height: 120px;
 
-    padding: 36px 54px 36px 60px;
+    padding: 36px 58px 36px 60px;
   }
 
   .footer__hashtag {

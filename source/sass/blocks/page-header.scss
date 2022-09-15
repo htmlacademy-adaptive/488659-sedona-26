@@ -15,11 +15,19 @@
 
 .page-header__main-nav {
   margin-bottom: 33px;
+
+  &--inner {
+    margin-bottom: 37px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-header__main-nav {
     margin-bottom: 48px;
+
+    &--inner {
+      margin-bottom: 68px;
+    }
   }
 
   .page-header__promo {
