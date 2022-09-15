@@ -74,6 +74,10 @@
   padding-left: 7px;
 }
 
+.benefits__break {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .benefits {
     display: grid;
@@ -168,10 +172,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .benefits {
+    padding-bottom: 78px;
+  }
+
   .benefits__item {
     &--house .benefits__description {
       padding-left: 58px;
       padding-right: 60px;
+    }
+
+    &--food .benefits__title {
+      margin-bottom: 24px;
     }
 
     &--food .benefits__description {
@@ -179,9 +191,19 @@
       padding-right: 50px;
     }
 
-    &--gift .benefits__description {
+    &--gift .benefits__title {
+      margin-bottom: 23px;
       padding-left: 104px;
       padding-right: 104px;
     }
+
+    &--gift .benefits__description {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+
+  .benefits__break {
+    display: block;
   }
 }

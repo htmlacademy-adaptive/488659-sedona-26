@@ -64,3 +64,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo__slogan-image {
+    padding-top: 78px;
+  }
+}

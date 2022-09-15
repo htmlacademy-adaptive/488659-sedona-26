@@ -207,7 +207,7 @@
 @media (min-width: $desktop-width) {
   .features__intro {
     margin-bottom: 44px;
-    padding: 0 50px;
+    padding: 0 50px 0 48px;
   }
 
   .features__item {
@@ -221,13 +221,35 @@
   }
 
   .features__subtitle {
-    margin-bottom: 16px;
+    margin-bottom: 13px;
     padding: 47px 110px 0;
   }
 
+  .features__number {
+    margin-bottom: 17px;
+  }
+
   .features__description {
-    margin-bottom: 56px;
+    margin-bottom: 55px;
     padding: 0 65px;
+  }
+
+  .features__item--bridge .features__subtitle {
+    margin-bottom: 5px;
+    padding: 50px 127px 0 123px;
+  }
+
+  .features__item--bridge .features__number {
+    margin-bottom: 14px;
+  }
+
+  .features__item--bridge .features__description {
+    margin-bottom: 46px;
+    padding: 0 90px 0 88px;
+  }
+
+  .features__item--gray-theme .features__number {
+    margin-bottom: 24px;
   }
 
   .features__image {
