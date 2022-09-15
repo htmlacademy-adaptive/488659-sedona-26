@@ -8,16 +8,16 @@
 }
 
 .form__personal-info {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .form__contact-info {
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 
 .form__title {
   width: 100%;
-  padding: 24px 0 20px;
+  padding: 24px 0 17px;
   border-top: 1px solid $grey-form-hover-color;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .form__box {
-  margin: 0 20px 16px;
+  margin: 0 20px 14px;
   text-align: left;
 }
 
@@ -169,8 +169,8 @@
   .form__checkbox:checked + &::after {
     position: absolute;
     content: "";
+    top: 4px;
     left: -33px;
-    top: 7px;
     width: 22px;
     height: 16px;
     background-image: url("../img/icon-tick.svg");
@@ -182,7 +182,7 @@
 }
 
 .form__comment {
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 
 .form__comment .form__label {
@@ -195,6 +195,11 @@
   margin-right: 20px;
 }
 
+.form__textarea-field {
+  padding-top: 17px;
+  padding-bottom: 5px;
+}
+
 .form__submit-wrapper {
   margin: 0 20px;
 }
@@ -202,7 +207,7 @@
 .form__button {
   width: 100%;
   padding: 18px 32px 13px;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .form__footnote {
