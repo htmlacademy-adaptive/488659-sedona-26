@@ -223,43 +223,61 @@
   .form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 43px;
+    column-gap: 38px;
+    margin-bottom: 0;
     padding: 0 60px 64px;
+  }
+
+  .form__personal-info {
+    margin-bottom: 50px;
   }
 
   .form__contact-info {
     position: relative;
+    margin-bottom: 50px;
+    padding-left: 24px;
   }
 
   .form__contact-info .form__title::before {
     position: absolute;
     content: "";
     top: 0;
-    left: -30px;
+    left: -20px;
     width: 1px;
     height: 338px;
     background-color: $grey-border-color;
   }
 
   .form__title {
+    font-size: 21px;
+    line-height: 1.24;
     width: auto;
     padding: 0 47px;
     border: none;
   }
 
-  .form__personal-info .form__title,
+  .form__personal-info .form__title {
+    padding: 0 20px 25px 40px;
+  }
+
   .form__contact-info .form__title {
-    padding: 0 26px 28px;
+    margin-left: -20px;
+    padding: 0 0 25px;
+  }
+
+  .form__contact-info .form__label {
+    padding-left: 18px;
   }
 
   .form__opinion .form__title,
   .form__checklist .form__title {
-    padding-bottom: 0;
-    margin-bottom: 38px;
+    margin-bottom: 39px;
+    padding: 0 65px;
   }
 
   .form__comment .form__title {
     margin-bottom: 28px;
+    padding: 0 74px;
   }
 
   .form__personal-info .form__box,
@@ -283,15 +301,15 @@
   }
 
   .form__opinion {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 
   .form__checklist {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .form__comment {
-    margin-bottom: 48px;
+    margin-bottom: 41px;
   }
 
   .form__opinion .form__list {
@@ -303,7 +321,8 @@
   }
 
   .form__label-radio {
-    padding-bottom: 26px;
+    margin-left: 46px;
+    padding-bottom: 20px;
   }
 
   .form__checklist .form__list {
@@ -317,11 +336,15 @@
 
   .form__label-checkbox {
     margin-left: 46px;
-    padding-bottom: 26px;
+    padding-bottom: 21px;
   }
 
   .form__comment .form__box {
     margin: 0;
+  }
+
+  .form__textarea-field {
+    padding-bottom: 14px;
   }
 
   .form__submit-wrapper {
@@ -339,6 +362,11 @@
   .form__button {
     width: 324px;
     margin-bottom: 0;
+    padding: 19px 10px 13px 0;
+  }
+
+  .form__footnote {
+    font-size: 14px;
   }
 }
 
