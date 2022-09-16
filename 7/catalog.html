@@ -10,7 +10,7 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page-header">
-        <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs"> <!-- Классы "main-nav--closed" и "main-nav--opened" закрывают и открывают мобильное меню, а также меняют внешний вид кнопки закрытия/открытия -->
+        <nav class="page-header__main-nav main-nav page-header__main-nav--inner main-nav--closed main-nav--nojs"> <!-- Классы "main-nav--closed" и "main-nav--opened" закрывают и открывают мобильное меню, а также меняют внешний вид кнопки закрытия/открытия -->
           <a class="main-nav__logo logo" href="index.html">
             <img class="logo__image" src="./img/logo.svg" width="185" height="96" alt="Логотип города Седона">
           </a>
@@ -92,6 +92,10 @@
               <article class="photo-gallery__item">
                 <a class="photo-gallery__link" href="#" target="_blank">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/gallery-photo-road-2-desktop@1x.webp 1x, ./img/gallery-photo-road-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery-photo-road-2-tablet@1x.webp 1x, ./img/gallery-photo-road-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/gallery-photo-road-2-mobile@1x.webp 1x, ./img/gallery-photo-road-2-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1200px)" srcset="./img/gallery-photo-road-2-desktop@1x.jpg 1x, ./img/gallery-photo-road-2-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/gallery-photo-road-2-tablet@1x.jpg 1x, ./img/gallery-photo-road-2-tablet@2x.jpg 2x">
                     <img class="photo-gallery__item-image" src="./img/gallery-photo-road-2-mobile@1x.jpg" srcset="./img/gallery-photo-road-2-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография горной дороги">
@@ -113,6 +117,10 @@
               <article class="photo-gallery__item">
                 <a class="photo-gallery__link" href="#" target="_blank">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/gallery-photo-bridge-desktop@1x.webp 1x, ./img/gallery-photo-bridge-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery-photo-bridge-tablet@1x.webp 1x, ./img/gallery-photo-bridge-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/gallery-photo-bridge-mobile@1x.webp 1x, ./img/gallery-photo-bridge-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1200px)" srcset="./img/gallery-photo-bridge-desktop@1x.jpg 1x, ./img/gallery-photo-bridge-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/gallery-photo-bridge-tablet@1x.jpg 1x, ./img/gallery-photo-bridge-tablet@2x.jpg 2x">
                     <img class="photo-gallery__item-image" src="./img/gallery-photo-bridge-mobile@1x.jpg" srcset="./img/gallery-photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография Моста Дьявола">
@@ -141,6 +149,10 @@
                     <span class="video-presentation__play">Воспроизвести</span>
                   </button>
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/video-desktop@1x.webp 1x, ./img/video-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/video-tablet@1x.webp 1x, ./img/video-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/video-mobile@1x.webp 1x, ./img/video-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1200px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
                     <img class="video-presentation__video-file" src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видеопрезентация о городе Седона">
