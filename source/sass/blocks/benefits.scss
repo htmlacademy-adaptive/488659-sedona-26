@@ -3,7 +3,7 @@
 .benefits {
   @include list-decoration;
 
-  padding: 23px 18px 30px;
+  padding: 32px 18px 22px;
 
   text-align: left;
   color: $dark-grey-color;
@@ -12,13 +12,13 @@
 
 .benefits__item {
   position: relative;
-  padding-left: 50px;
-  margin-bottom: 22px;
+  padding-left: 44px;
+  margin-bottom: 30px;
 
   &--house::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -6px;
     left: 0;
     width: 39px;
     height: 37px;
@@ -31,7 +31,7 @@
   &--food::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -6px;
     left: 0;
     width: 40px;
     height: 35px;
@@ -44,8 +44,8 @@
   &--gift::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -7px;
+    left: 4px;
     width: 32px;
     height: 38px;
 
@@ -64,8 +64,28 @@
   margin-bottom: 16px;
 }
 
+.benefits__item--house .benefits__title,
+.benefits__item--house .benefits__description {
+  padding-left: 4px;
+}
+
+.benefits__item--food .benefits__title,
+.benefits__item--food .benefits__description {
+  padding-left: 7px;
+}
+
+.benefits__break {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    row-gap: 20px;
+
     text-align: center;
     padding: 0;
     padding-top: 57px;
@@ -85,7 +105,7 @@
     &--house::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 3px;
       left: 50%;
       transform: translateX(-50%);
       width: 75px;
@@ -104,7 +124,7 @@
     &--food::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 5px;
       left: 50%;
       transform: translateX(-50%);
       width: 76px;
@@ -136,16 +156,34 @@
   }
 
   .benefits__title {
+    font-size: 21px;
+    line-height: 1.24;
     margin-bottom: 26px;
     padding: 0 35px;
+  }
+
+  .benefits__item--house .benefits__title {
+    padding-left: 34px;
+  }
+
+  .benefits__item--food .benefits__title {
+    padding-left: 34px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .benefits {
+    padding-bottom: 78px;
+  }
+
   .benefits__item {
     &--house .benefits__description {
       padding-left: 58px;
       padding-right: 60px;
+    }
+
+    &--food .benefits__title {
+      margin-bottom: 24px;
     }
 
     &--food .benefits__description {
@@ -153,9 +191,19 @@
       padding-right: 50px;
     }
 
-    &--gift .benefits__description {
+    &--gift .benefits__title {
+      margin-bottom: 23px;
       padding-left: 104px;
       padding-right: 104px;
     }
+
+    &--gift .benefits__description {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+
+  .benefits__break {
+    display: block;
   }
 }

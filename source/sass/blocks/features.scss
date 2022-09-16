@@ -2,7 +2,7 @@
 
 .features__wrapper {
   @include container;
-  margin-bottom: 32px;
+  margin-bottom: 37px;
 }
 
 .features__intro {
@@ -41,7 +41,7 @@
 .features__subtitle {
   margin: 0;
   margin-bottom: 11px;
-  padding: 24px 31px 0;
+  padding: 24px 31px 0 27px;
 
   &--blue-theme {
     color: inherit;
@@ -58,21 +58,44 @@
   }
 }
 
-.features__number,
-.features__description {
-  size: 21px;
-  line-height: 15px;
-}
-
 .features__number {
   margin-top: 0;
   margin-bottom: 17px;
-  padding: 0 31px;
+  padding: 0 31px 0 27px;
 }
 
 .features__description {
   margin: 0;
-  padding: 0 31px 24px;
+  padding: 0 31px 39px 23px;
+}
+
+.features__item--bridge .features__subtitle {
+  padding-top: 40px;
+}
+
+.features__item--bridge .features__description {
+  padding-left: 30px;
+  padding-bottom: 35px;
+}
+
+.features__item--area .features__subtitle {
+  padding-top: 26px;
+  padding-left: 28px;
+}
+
+.features__item--area .features__description {
+  padding-left: 29px;
+  padding-bottom: 24px;
+}
+
+.features__item--road .features__description {
+  padding-left: 30px;
+  padding-bottom: 27px;
+}
+
+.features__item--tourists .features__description {
+  padding-left: 32px;
+  padding-bottom: 26px;
 }
 
 .features__image {
@@ -128,8 +151,10 @@
   }
 
   .features__subtitle {
-    margin-bottom: 16px;
-    padding: 40px 36px 0;
+    font-size: 21px;
+    line-height: 1.24;
+    margin-bottom: 13px;
+    padding: 39px 36px 0;
 
     &--underline::after {
       display: none;
@@ -137,7 +162,8 @@
   }
 
   .features__number {
-    margin-bottom: 26px;
+    margin-bottom: 23px;
+    padding-left: 29px;
   }
 
   .features__description {
@@ -145,9 +171,20 @@
     padding: 0 31px;
   }
 
-  .features__image {
-    width: 512px;
-    height: 256px;
+  .features__item--bridge .features__subtitle {
+    padding: 41px 53px 0;
+  }
+
+  .features__item--bridge .features__description {
+    margin-bottom: 41px;
+    padding: 0 31px 0 30px;
+  }
+
+  .features__item--tourists .features__description {
+    padding: 0 5px 0;
+  }
+
+  .features__image-box {
     grid-column-start: 2;
     grid-column-end: -1;
     grid-row-start: 1;
@@ -161,18 +198,16 @@
     }
   }
 
-  .features__list-benefits {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-start: 1;
-    grid-column-end: -1;
+  .features__image {
+    width: 512px;
+    height: 256px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features__intro {
     margin-bottom: 44px;
-    padding: 0 50px;
+    padding: 0 50px 0 48px;
   }
 
   .features__item {
@@ -186,13 +221,35 @@
   }
 
   .features__subtitle {
-    margin-bottom: 16px;
+    margin-bottom: 13px;
     padding: 47px 110px 0;
   }
 
+  .features__number {
+    margin-bottom: 17px;
+  }
+
   .features__description {
-    margin-bottom: 56px;
+    margin-bottom: 55px;
     padding: 0 65px;
+  }
+
+  .features__item--bridge .features__subtitle {
+    margin-bottom: 5px;
+    padding: 50px 127px 0 123px;
+  }
+
+  .features__item--bridge .features__number {
+    margin-bottom: 14px;
+  }
+
+  .features__item--bridge .features__description {
+    margin-bottom: 46px;
+    padding: 0 90px 0 88px;
+  }
+
+  .features__item--gray-theme .features__number {
+    margin-bottom: 24px;
   }
 
   .features__image {

@@ -46,12 +46,12 @@
   display: block;
   font-family: inherit;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 1.44;
   font-weight: 700;
 
   color: $white-color;
 
-  padding: 17px 0 12px;
+  padding: 17px 0 13px;
 
   &:hover {
     background-color: $blue-hover-color;
@@ -88,8 +88,8 @@
   & .main-nav__toggle::before {
     content: "";
     position: absolute;
-    top: 17px;
-    right: 20px;
+    top: 16px;
+    right: 19px;
     width: 23px;
     height: 23px;
     background-image: url("../img/icon-cross.svg");
@@ -116,10 +116,6 @@
     width: 100%;
   }
 
-  .main-nav--opened .promo--inner {
-    padding-top: 130px;
-  }
-
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
@@ -130,6 +126,14 @@
     top: 0;
     width: 100%;
   }
+
+  .main-nav--nojs .main-nav__logo {
+    padding-top: 220px;
+  }
+
+  .main-nav--nojs .promo--inner {
+    padding-top: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -137,7 +141,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -96px;
+    margin-left: -93px;
   }
 
   .main-nav__toggle {
@@ -163,7 +167,7 @@
     }
 
     &:nth-child(2) {
-      margin-right: 153px;
+      margin-right: 154px;
     }
 
     &--active .main-nav__link {
@@ -172,8 +176,9 @@
   }
 
   .main-nav__link {
+    padding: 19px 0 16px;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 1.5;
     font-weight: 700;
     color: $black-color;
 

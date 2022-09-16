@@ -6,10 +6,10 @@
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page__body">
+  <body class="page__body"> <!--Класс "page__body--modal-show" убирает скрол страницы при открытии модального окна-->
     <div class="page__wrapper">
       <header class="page-header">
-        <nav class="page-header__main-nav main-nav main-nav--opened main-nav--nojs">
+        <nav class="page-header__main-nav main-nav page-header__main-nav--inner main-nav--closed main-nav--nojs"> <!-- Классы "main-nav--closed" и "main-nav--opened" закрывают и открывают мобильное меню, а также меняют внешний вид кнопки закрытия/открытия -->
           <a class="main-nav__logo logo" href="index.html">
             <img class="logo__image" src="./img/logo.svg" width="185" height="96" alt="Логотип города Седона">
           </a>
@@ -112,7 +112,7 @@
               </fieldset>
               <div class="form__submit-wrapper">
                 <button class="form__button button" type="submit" name="send-form">Отправить отзыв</button>
-                <p class="form__footnote"><small><sup>*</sup> — Обязательные поля</small></p>
+                <p class="form__footnote"><sup>*</sup> — Обязательные поля</p>
               </div>
             </form>
           </div>
@@ -123,25 +123,33 @@
           <p class="footer__hashtag"><b>#visitsedona</b></p>
           <ul class="footer__list social">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="#">
-                <img class="social__icon social__icon--vk" src="./img/icon-vk.svg" width="24" height="14" alt="Vkontakte">
+              <a class="social__link social__link--vk" href="#" aria-label="Vkontacte">
+                <svg class="social__icon social__icon--vk" width="24" height="14">
+                  <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link ssocial__link--telegram" href="#">
-                <img class="social__icon social__icon--telegram" src="./img/icon-telegram.svg" width="21" height="17.6" alt="Telegram">
+              <a class="social__link social__link--telegram" href="#" aria-label="Telegram">
+                <svg class="social__icon social__icon--telegram" width="22" height="18">
+                  <use xlink:href="./img/sprite.svg#icon-telegram"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="#" aria-label="Youtube">
-                <img class="social__icon social__icon--youtube" src="./img/icon-youtube.svg" width="20" height="14" alt="Youtube">
+                <svg class="social__icon social__icon--youtube" width="20" height="14">
+                  <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+                </svg>
               </a>
             </li>
           </ul>
           <div class="footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
               Разработано
-              <img class="copyright__icon" src="./img/icon-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy"></img>
+              <svg class="copyright__icon" width="27" height="34">
+                <use xlink:href="./img/sprite.svg#icon-htmlacademy"></use>
+              </svg>
             </a>
           </div>
         </div>

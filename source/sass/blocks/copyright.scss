@@ -8,7 +8,7 @@
   box-sizing: border-box;
   font-family: inherit;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   font-weight: 400;
   text-transform: uppercase;
   cursor: pointer;
@@ -16,7 +16,7 @@
   color: $black-color;
 
   margin: 0;
-  margin-right: 45px;
+  margin-right: 44px;
 
   &[href]:hover {
     color: $blue-default-color;
@@ -30,10 +30,11 @@
 .copyright__icon {
   @include image-size;
   position: absolute;
-  top: -6px;
-  left: 122px;
+  top: -7px;
+  left: 123px;
   width: 27px;
   height: 34px;
+  fill: currentColor;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,10 +43,21 @@
   }
 
   .copyright__link {
+    margin-right: 46px;
     padding: 0;
   }
 
   .copyright__icon {
-    left: 100px;
+    left: 104px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    margin-right: 40px;
+  }
+
+  .copyright__icon {
+    top: -6px;
   }
 }

@@ -2,15 +2,16 @@
 
 .footer__wrapper {
   @include container;
-  padding: 28px 70px 23px;
+  padding: 28px 70px 23px 73px;
 }
 
 .footer__hashtag {
   margin-top: 0;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
+  padding-right: 7px;
 
   font-size: 21px;
-  line-height: 26px;
+  line-height: 1.24;
   font-weight: 700px;
   color: $black-color;
 }
@@ -18,7 +19,7 @@
 .footer__list {
   @include list-decoration;
   margin: 0 auto;
-  margin-bottom: 43px;
+  margin-bottom: 46px;
 }
 
 .footer__copyright {
@@ -33,7 +34,7 @@
     align-items: center;
     height: 120px;
 
-    padding: 36px 60px 36px 42px;
+    padding: 36px 58px 36px 60px;
   }
 
   .footer__hashtag {
@@ -52,7 +53,8 @@
 
 @media (min-width: $desktop-width) {
   .footer__wrapper {
+    padding-top: 38px;
     padding-right: 120px;
-    padding-left: 104px;
+    padding-left: 118px;
   }
 }
