@@ -7,6 +7,10 @@
 
 .main-nav__logo {
   display: block;
+
+  &:focus {
+    outline: 2px solid $black-color;
+  }
 }
 
 .main-nav__toggle {

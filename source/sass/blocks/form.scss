@@ -114,16 +114,18 @@
     background-color: $grey-form-color;
   }
 
-  &:hover::before {
-    background-color: $grey-form-hover-color;
-  }
-
-  &:active::before {
-    background-color: $grey-form-down-color;
-  }
-
   .form__radio-field:focus + &::before {
     outline: 2px solid $black-color;
+  }
+
+  .form__radio-field:hover + &::before {
+    background-color: $grey-form-hover-color;
+    outline: none;
+  }
+
+  .form__radio-field:active + &::before {
+    background-color: $grey-form-down-color;
+    outline: none;
   }
 
   .form__radio-field:checked + &::after {
@@ -154,16 +156,18 @@
     background-color: $grey-form-color;
   }
 
-  &:hover::before {
-    background-color: $grey-form-hover-color;
-  }
-
-  &:active::before {
-    background-color: $grey-form-down-color;
-  }
-
   .form__checkbox:focus + &::before {
     outline: 2px solid $black-color;
+  }
+
+  .form__checkbox:hover + &::before {
+    background-color: $grey-form-hover-color;
+    outline: none;
+  }
+
+  .form__checkbox:active + &::before {
+    background-color: $grey-form-down-color;
+    outline: none;
   }
 
   .form__checkbox:checked + &::after {
